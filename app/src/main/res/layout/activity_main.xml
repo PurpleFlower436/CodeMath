@@ -10,30 +10,63 @@
     <TextView
         android:id="@+id/Math_Adder_header"
         android:layout_width="wrap_content"
-        android:textSize="22dp"
         android:layout_height="wrap_content"
-        android:text="Welcome to Math adder! Type in 1 number into  each field and then youll get your calculation!"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to Math adder!"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintVertical_bias="0.021" />
 
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type in 1 number into  each field and then youll get your calculation!"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
 
 
     <EditText
 
         android:id="@+id/number_input1"
-        android:layout_height="50dp"
         android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:hint="Number"
         android:inputType="number"
         android:maxLength="2"
-        app:layout_constraintTop_toBottomOf="@id/Math_Adder_header"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
-        android:hint="Number" >
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructions">
 
     </EditText>
+
+    <EditText
+
+        android:id="@+id/number_input2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:hint="Number"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_input1">
+
+    </EditText>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
