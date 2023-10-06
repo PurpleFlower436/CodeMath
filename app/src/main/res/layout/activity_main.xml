@@ -6,22 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/Math_Adder_header"
         android:layout_width="wrap_content"
+        android:textSize="22dp"
         android:layout_height="wrap_content"
-        android:text="Welcome to Math adder! Type in 1 number into \n each field and then youll get your calculation!"
+        android:text="Welcome to Math adder! Type in 1 number into  each field and then youll get your calculation!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
 
 
 
     <EditText
-        android:id="@+id/number_input"
-        android:layout_height="wrap_content"
+
+        android:id="@+id/number_input1"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
         android:inputType="number"
-        android:layout_width="match_parent">
+        android:maxLength="2"
+        app:layout_constraintTop_toBottomOf="@id/Math_Adder_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:hint="Number" >
+
     </EditText>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
