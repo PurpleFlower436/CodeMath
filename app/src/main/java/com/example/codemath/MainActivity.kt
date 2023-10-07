@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
 
         val numberInput1EditText = findViewById<EditText>(R.id.number_input1)
 
+        val numberInput2EditText = findViewById<EditText>(R.id.number_input2)
+
+
 
     }
 
